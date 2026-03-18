@@ -4,7 +4,7 @@ package exercise_1;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        IO.println("OOP-1 Exercises");
+        IO.println("OOP-2 Exercises");
         System.out.println("=== Creating Bank Accounts ===\n");
 
         // Account 1: Using constructor with both fields
