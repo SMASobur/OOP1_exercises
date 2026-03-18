@@ -14,10 +14,11 @@ public class Main {
         System.out.println("--------------------------------------------------");
 
 
-        Customer cust1 = new Customer("101", "Ragavi", "ragavi@mail.com", "071234567");
-        Customer cust2 = new Customer("102", "Abdus Sobur", "sikdar@mail.com");
+        Customer cust1 = new Customer("U01", "Ragavi", "ragavi@mail.com", "071234567");
+        Customer cust2 = new Customer("U02", "Abdus Sobur", "sikdar@mail.com");
 
-        cust2.setEmail("siri.new@mail.com"); // Updating email safely
+        cust2.setEmail("sir.se@gmail.com"); // Updating email
+        cust2.setPhoneNumber("078945612"); // Updating phone
 
         System.out.println(cust1.getCustomerInfo());
         System.out.println(cust2.getCustomerInfo());
