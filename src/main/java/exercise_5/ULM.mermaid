@@ -1,0 +1,26 @@
+classDiagram
+    class Product {
+        - String productId
+        - String name
+        - double price
+        + Product (String, String, double)
+        + getName() String
+        + setName(String) void
+        + getPrice() double
+        + setPrice(double) void
+        + getProductInfo() String
+    }
+
+    class Order {
+        - String orderId
+        - List~Product~ products
+        + Order (String, List~Product)
+        + addProduct(Product p) void
+        + removeProduct(Product p) void
+        + calculateTotal() double
+        + getOrderId() String
+        + getProducts(List~Products)
+        + displayOrder() void
+    }
+
+Order "1" o-- "*" Product : contains
