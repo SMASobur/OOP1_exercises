@@ -75,6 +75,6 @@ public class BankAccount {
     }
 
     public String getAccountInfo(){
-        return "Account Holder: "+accountHolder + ", Balance: SEK " + balance ;
+        return "Account Holder: "+accountHolder + " | Balance: SEK " + balance ;
     }
 }
