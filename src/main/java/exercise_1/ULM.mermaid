@@ -1,15 +1,15 @@
 classDiagram
     class BankAccount {
-        - accountHolder: String
-        - balance: double
-        + BankAccount(accountHolder: String, initialBalance: double)
-        + BankAccount(accountHolder: String)
+        - String accountHolder
+        - double balance
         + BankAccount()
-        + getAccountHolder(): String
-        + setAccountHolder(accountHolder: String): void
-        + getBalance(): double
-        - setBalance(balance: double): void
-        + deposit(amount: double): void
-        + withdraw(amount: double): void
-        + getAccountInfo(): String
+        + BankAccount(String accountHolder)
+        + BankAccount(String accountHolder, double initialBalance)
+        + getAccountHolder() String
+        + setAccountHolder(String accountHolder) void
+        + getBalance() double
+        + setBalance(double balance) void
+        + deposit(double amount) void
+        + withdraw(double amount) void
+        + getAccountInfo() String
     }

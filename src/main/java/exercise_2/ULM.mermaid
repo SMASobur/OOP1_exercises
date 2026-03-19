@@ -3,22 +3,26 @@ classDiagram
         - String accountHolder
         - double balance
         + BankAccount(String, double)
-        + deposit(double) void
-        + withdraw(double) void
         + getAccountHolder() String
         + setAccountHolder(String) void
         + getBalance() double
+        + deposit(double) void
+        + withdraw(double) void
     }
 
     class Customer {
         - String customerId
         - String name
         - String email
-        + Customer(String, String, String)
+        - String phoneNumber
+        + Customer(String, String, String, String)
         + getCustomerId() String
+        + setCustomerId(String) void
         + getName() String
         + setName(String) void
         + getEmail() String
         + setEmail(String) void
+        + getPhoneNumber() String
+        + setPhoneNumber(String) vooid
         + getCustomerInfo() String
     }
